@@ -1,0 +1,15 @@
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<div id="app">
+    <span v-if="seen==='A'">The value is A</span>
+    <span v-else-if="seen==='B'">The value is B</span>
+    <span v-else>The value is Not A and B</span>
+<div>
+<script>
+    var vue = new Vue({
+        el : '#app',
+        data : {
+            seen : 'C'
+        }
+    })
+</script>
